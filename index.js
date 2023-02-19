@@ -51,8 +51,8 @@ const questions = [
   // Questions
   {
     type: `input`,
-    name: `questions`,
-    message: `Please provide.`
+    name: `faq`,
+    message: `Frequently asked questions.`
   },
   // GitHub username
   {
