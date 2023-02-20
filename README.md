@@ -1,29 +1,30 @@
-# Test Project
+# README file Generator
   
   ## Description
-  To see if I can make a README.md file using node
+  Creating a README.md file using node.js
  
 
   ## Installation
-  download inquirer package 6.5.0;
-  
+  Use node to download Inquirer package 6.5.0 for it to run effectively
+
   ## Usage
-  easy to use;
+  An easy way to create a README file
 
   ## License
-  None;
+  MIT
 
   ## Contributing
-  bootcamp, youtube and github;
+  To credit me (link to my Github) for my generator
 
   ## Tests
-  N/A;
-  
+  Run 'npm init' in node when first using the project to see if 'package.json' is included in the repo with the required dependencies
+
   ## Questions
-  Please see FAQ;
+  Please email for any further questions
 
   ## GitHub 
-  mewmew88;
+  Mewmew88
 
   ## Email
-  email upon request
+  mehr_hejazi@hotmail.com
+  
