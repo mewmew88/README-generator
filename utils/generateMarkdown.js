@@ -7,34 +7,34 @@ function generateDescription(description) {
 }
 
 function generateMarkdown(data) {
-  return `# ${data.title}
+    return `# ${data.title}
   ${data.description !== '' ? generateDescription(data.description) : ''}
 
   ## Installation
-  ${data.installation};
-  
+  ${data.installation}
+
   ## Usage
-  ${data.usage};
+  ${data.usage}
 
   ## License
-  ${data.license};
+  ${data.license}
 
   ## Contributing
-  ${data.contributing};
+  ${data.contributing}
 
   ## Tests
-  ${data.tests};
-  
+  ${data.tests}
+
   ## Questions
-  ${data.faq };
+  ${data.faq}
 
   ## GitHub 
-  ${data.github};
+  ${data.github}
 
   ## Email
-  ${data.email }`;
+  ${data.email}
+  `;
 }
-
-module.exports = generateMarkdown;
-function newFunction() {
+  module.exports = generateMarkdown;
+  function newFunction() {
   ;''}
