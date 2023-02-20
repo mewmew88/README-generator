@@ -51,8 +51,8 @@ const questions = [
   // Questions
   {
     type: `input`,
-    name: `questions`,
-    message: `Please provide.`
+    name: `faq`,
+    message: `Frequently asked questions.`
   },
   // GitHub username
   {
@@ -66,7 +66,6 @@ const questions = [
     name: `email`,
     message: `Please provide your email address.`
   }
-
 ];
 
 // function to write README file
