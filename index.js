@@ -15,43 +15,49 @@ const questions = [
     name: `description`,
     message: `Please provide a description of your project.`
   },
-  // Installation guide 
-  {type: `input`,
+    // Installation guide 
+    {type: `input`,
     name: `installation`,
     message: `Please provide installation instructions.`
   },
-  // Usage
-  {type: `input`,
+    // Usage
+    {type: `input`,
     name: `usage`,
     message: `Please provide usage information.`
-  },
-  // License (multiple choice)
-  {type: "list",
-    choices: [`MIT`, `APACHE 2.0`, `GPL 3.0`, `BSD 3`, `None`],
-    name: "license",
-    message: "What license would you like to use?",
-  },
-  // Contributing
-  {type: `input`,
-    name: `contributing`,
-    message: `Please provide contribution guidelines.`
   },
   // Tests
   {type: `input`,
     name: `tests`,
     message: `Please provide test instructions.`
   },
+    // Contributing
+    {type: `input`,
+    name: `contributing`,
+    message: `Please provide contribution guidelines.`
+  },
+  // License (multiple choice)
+  {type: "list",
+    choices: [`MIT`, `APACHE 2.0`, `GPL 3.0`, `BSD 3`, `None`],
+    name: `license`,
+    message: `What license would you like to use?`,
+  },
   // Questions
  {type: `input`,
-    name: `github`,
-    message: `Please provide your GitHub username.`
-  },
+   name: `troubleshooting`,
+   message: `Please provide troubleshooting information or press Enter key to skip.`
+ },
+  // Email address
   {type: `input`,
-    name: `email`,
-    message: `Please provide your email address.`
-  },
+  name: `email`,
+  message: `Please provide your email address.`,
+  //default: 'N/A' // add a default value of 'N/A'
+},
+ // GitHub username
+ {type: `input`,
+   name: `github`,
+   message: `Please provide your GitHub username.`
+ }
 ];
-
 // function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(`README.md`, data, (err) => {
@@ -62,7 +68,6 @@ function writeToFile(fileName, data) {
         }
         });
 }
-
 // function to initialize program
 function init() {
   inquirer
@@ -74,6 +79,5 @@ function init() {
     writeToFile(`README.md`, markdown);
   });
 }
-
 // function call to initialize program
 init();
